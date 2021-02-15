@@ -580,6 +580,7 @@ export default class Dropdown extends PureComponent {
       disabledItemColor = baseColor,
       fontSize,
       itemTextStyle,
+      itemNumberOfLines = 1,
       rippleOpacity,
       rippleDuration,
       shadeOpacity,
@@ -630,7 +631,7 @@ export default class Dropdown extends PureComponent {
 
     return (
       <DropdownItem index={index} {...props}>
-        <Text style={[styles.item, itemTextStyle, textStyle]} numberOfLines={1}>
+        <Text style={[styles.item, itemTextStyle, textStyle]} numberOfLines={itemNumberOfLines}>
           {title}
         </Text>
       </DropdownItem>
