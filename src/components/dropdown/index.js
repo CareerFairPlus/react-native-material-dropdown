@@ -134,6 +134,7 @@ export default class Dropdown extends PureComponent {
     baseColor: PropTypes.string,
 
     itemTextStyle: Text.propTypes.style,
+    itemNumberOfLines: Text.propTypes.numberOfLines,
 
     itemCount: PropTypes.number,
     itemPadding: PropTypes.number,
@@ -580,7 +581,7 @@ export default class Dropdown extends PureComponent {
       disabledItemColor = baseColor,
       fontSize,
       itemTextStyle,
-      itemNumberOfLines = 1,
+      itemNumberOfLines = 2,
       rippleOpacity,
       rippleDuration,
       shadeOpacity,
